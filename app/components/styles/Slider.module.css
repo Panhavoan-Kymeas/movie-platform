@@ -1,0 +1,26 @@
+/* styles/Slider.module.css */
+.splide__arrow {
+    background-color: rgba(0, 0, 0, 0.5); /* Background color */
+    color: white; /* Arrow color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Round shape */
+    width: 40px; /* Width of the arrow */
+    height: 40px; /* Height of the arrow */
+    display: flex; /* Center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .splide__arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  }
+  
+  .splide__arrow--prev {
+    left: 10px; /* Adjust left position */
+  }
+  
+  .splide__arrow--next {
+    right: 10px; /* Adjust right position */
+  }
+  
