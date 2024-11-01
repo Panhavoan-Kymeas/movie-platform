@@ -4,21 +4,17 @@ import Icon from "./Icon";
 import Dropdown from "./Dropdown";
 
 export default function Header() {
-    const headerStyle = {
+    const headerStyle: React.CSSProperties = {
+        width: '100%',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingLeft: '46px',
         paddingRight: '46px',
         paddingTop: '25px',
-    };
-
-    const separatorStyle = {
-        height: '1px',
-        backgroundColor: '#ccc',
-        margin: '40px auto',
-        width: '95%',
-        alignItem: 'center'
+        backgroundColor: 'transparent',
+        zIndex: 10,
+        position: 'absolute', // Ensure this is one of the valid position values
     };
 
     return (
@@ -28,18 +24,13 @@ export default function Header() {
                     <Icon icon='user' label='LOG IN'/>
                 </div>
                 
-                <div className='col-md-8 text-center'>
-                    <span style={{ margin: 0, fontSize: '32px' }}>CINEMAers</span>
-                </div>
-                
                 <div className='col-md-2 text-center' style={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <Icon icon='bell' />
-                    <Icon icon='ticket' />
+                    <Icon icon='star' />
                     <Icon />
                     <Dropdown />
                 </div>
             </div>
-            <div style={separatorStyle}></div>
         </header>
     );
 }
