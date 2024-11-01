@@ -18,13 +18,15 @@ export default function Login() {
             backgroundImage: "url('/login_background.jpg')", // Use the path from the public folder
             backgroundSize: 'cover', // Cover the entire area
             backgroundPosition: 'center', // Center the image
+            height: '100vh'
         }}>
             <div className="relative w-[241px] h-[600px] overflow-hidden" style={loginImage}>
                 <Image 
                     src='/login_image_container.jpg'
                     alt="water tower image"
-                    layout="fill" // Make the image fill the container
-                    objectFit="cover" // Ensure the image covers the container
+                    width={241}
+                    height={600}
+                    style={{ objectFit: 'cover' }}
                 />
             </div>
             <div className="w-[603px] h-[600px] p-8" style={loginContainer}>
