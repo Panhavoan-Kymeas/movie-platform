@@ -10,4 +10,12 @@ body {
   color: white;
   background-color: black;
   font-family: 'Itim', sans-serif;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }

@@ -14,7 +14,7 @@ export default function Header() {
         paddingTop: '25px',
         backgroundColor: 'transparent',
         zIndex: 10,
-        position: 'absolute', // Ensure this is one of the valid position values
+        position: 'absolute',
     };
 
     return (

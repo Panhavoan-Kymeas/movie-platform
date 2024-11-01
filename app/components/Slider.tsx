@@ -47,6 +47,7 @@ export default function DemoSlider() {
             loop={true}
             modules={[Autoplay, Navigation, Pagination]}
           >
+            {/* Map through all item in slider*/}
             {slides.map(({ id, backgroundColor, tagline, title }) => (
               <SwiperSlide key={id} style={{ height: '75vh' }}>
                 <div
