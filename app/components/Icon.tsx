@@ -5,8 +5,8 @@ export default function Icon({ icon = '', label = '' }) {
         icon = 'person-fill';
     } else if (icon === 'bell') {
         icon = 'bell-fill';
-    } else if (icon === 'ticket') {
-        icon = 'ticket-perforated';
+    } else if (icon === 'star') {
+        icon = 'star-fill';
     }
 
     const iconStyle = {
