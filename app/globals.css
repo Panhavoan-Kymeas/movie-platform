@@ -6,6 +6,16 @@
 
 @import "flowbite";
 
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Display-Bold.woff') format('woff'),
+       url('./fonts/SF-Pro-Display-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 body {
   color: white;
   background-color: black;
