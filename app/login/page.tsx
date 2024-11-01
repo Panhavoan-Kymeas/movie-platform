@@ -1,3 +1,9 @@
+import Login from "../components/Login"
+
 export default function login(){
-    return <p>Hello World!</p>
+    return (
+        <>
+            <Login />
+        </>
+    )
 }
