@@ -6,8 +6,26 @@
 
 @import "flowbite";
 
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Display-Bold.woff') format('woff'),
+       url('./fonts/SF-Pro-Display-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 body {
   color: white;
   background-color: black;
   font-family: 'Itim', sans-serif;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
