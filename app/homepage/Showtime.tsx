@@ -40,7 +40,8 @@ export default function Showtime() {
             gridTemplateColumns: 'repeat(5, 150px)',
             gap: '63px',
             paddingLeft: '53px',
-            paddingTop: '78px'
+            paddingTop: '78px',
+            paddingBottom: '70px'
         }}>
             {dates.map((dateInfo, index) => (
                 <div key={index} onClick={() => handleClick(index)} style={{

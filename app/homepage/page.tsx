@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Slider from "@/app/components/Slider";
-import CurrentandUpcomming from "../components/CurrentandUpcomming";
-import Showtime from "../components/Showtime"
+import Slider from "./Slider";
+import CurrentandUpcomming from "./CurrentandUpcomming";
+import Showtime from "./Showtime";
+import MovieList from "./MovieList"
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Slider/>
       <CurrentandUpcomming/>
       <Showtime/>
+      <MovieList/>
     </div>
   );
 }

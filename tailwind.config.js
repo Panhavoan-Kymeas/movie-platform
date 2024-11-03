@@ -6,7 +6,11 @@ module.exports = {
     // Add the path to your carousel component if it's not in pages or components.
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '32rem',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin') // Include Flowbite as a plugin

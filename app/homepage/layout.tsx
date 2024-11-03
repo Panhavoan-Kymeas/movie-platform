@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Movie-Platform",
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (<>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Header/>
         {children}
         <Footer/>
