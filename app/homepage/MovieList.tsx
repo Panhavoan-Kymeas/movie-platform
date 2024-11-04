@@ -9,25 +9,77 @@ export default function MovieList() {
     };
     
     return (
-        <div className="flex justify-center">
-            <div className="grid grid-cols-4 gap-12">
-                <div className="bg-black w-64 h-auto flex justify-center flex-col items-start">
-                    <img src="https://tickets.legend.com.kh/CDN/media/entity/get/Movies/HO00001752" alt="" className="mb-2"/>
-                    <div className="flex justify-between items-center w-full pb-2">
-                        <div className="text-xl">Bagman</div>
-                        <div className="bg-blue-500 w-20 rounded">a</div>
+        <div className="mt-6 lg:mt-12 mx-auto max-w-7xl">
+        <div className="grid grid-cols-2 gap-20 grid-cols-4">
+            <a href="#" className="">
+            <div className="flex flex-col gap-4">
+                <div className="h-full w-full">
+                <img src="https://tickets.legend.com.kh/CDN/media/entity/get/Movies/HO00001752" width="298" height="402" loading="lazy" className="max-w-full transition-opacity opacity-100 h-auto w-full rounded-xl"/>
+                </div>
+                <div className="flex flex-col gap-2">
+                    <div className="flex flex-row gap-2">
+                        <p className="text-2xl">Bagman</p>
+                        <div className="bg-white h-auto w-10 justify-center"></div>
                     </div>
-                    
-                    <div className="grid grid-cols-3 gap-2">
-                        <div className="bg-white w-20 rounded">a</div>
-                        <div className="bg-white w-20 rounded">a</div>
-                        <div className="bg-white w-20 rounded">a</div>
+                    <div className="grid grid-cols-3 gap-3">
+                        <div className="h-6 rounded"><img src="/image/legend.png" className="h-full w-full object-cover" alt=""/></div>
+                        <div className="h-6 rounded"><img src="/image/major.png" className="h-full w-full object-cover" alt=""/></div>
+                        <div className="h-6 rounded"><img src="/image/prime.png" className="h-full w-full object-cover" alt=""/></div>
                     </div>
                 </div>
-                <div className="bg-white w-64 h-96 flex items-center justify-center">01</div>
-                <div className="bg-white w-64 h-96 flex items-center justify-center">01</div>
-                <div className="bg-white w-64 h-96 flex items-center justify-center">01</div>
             </div>
+            </a>
+
+            <a href="#" className="">
+            <div className="flex flex-col gap-4">
+                <div className="h-full w-full">
+                <img src="https://tickets.legend.com.kh/CDN/media/entity/get/Movies/HO00001752" width="298" height="402" loading="lazy" className="max-w-full transition-opacity opacity-100 h-auto w-full rounded-xl"/>
+                </div>
+                <div className="flex flex-col gap-2">
+                <p className="text-2xl">Movie Title Here</p>
+                <div className="grid grid-cols-3 gap-3">
+                    <div className="bg-white rounded">a</div>
+                    <div className="bg-white rounded">a</div>
+                    <div className="bg-white rounded">a</div>
+                </div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#" className="">
+            <div className="flex flex-col gap-4">
+                <div className="h-full w-full">
+                <img src="https://tickets.legend.com.kh/CDN/media/entity/get/Movies/HO00001752" width="298" height="402" loading="lazy" className="max-w-full transition-opacity opacity-100 h-auto w-full rounded-xl"/>
+                </div>
+                <div className="flex flex-col gap-2">
+                <p className="text-2xl">Movie Title Here</p>
+                <div className="grid grid-cols-3 gap-3">
+                    <div className="bg-white rounded">a</div>
+                    <div className="bg-white rounded">a</div>
+                    <div className="bg-white rounded">a</div>
+                </div>
+                </div>
+            </div>
+            </a>
+
+            <a href="#" className="">
+            <div className="flex flex-col gap-4">
+                <div className="h-full w-full">
+                <img src="https://tickets.legend.com.kh/CDN/media/entity/get/Movies/HO00001752" width="298" height="402" loading="lazy" className="max-w-full transition-opacity opacity-100 h-auto w-full rounded-xl"/>
+                </div>
+                <div className="flex flex-col gap-2">
+                <p className="text-2xl">Movie Title Here</p>
+                <div className="grid grid-cols-3 gap-3">
+                    <div className="bg-white rounded">a</div>
+                    <div className="bg-white rounded">a</div>
+                    <div className="bg-white rounded">a</div>
+                </div>
+                </div>
+            </div>
+            </a>
         </div>
+        </div>
+
+
     );
 }
