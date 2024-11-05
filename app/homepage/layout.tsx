@@ -14,7 +14,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Header/>
         {children}
         <Footer/>
         </>
