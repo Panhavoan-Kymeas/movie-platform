@@ -35,32 +35,18 @@ export default function Showtime() {
     };
 
     return (
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(5, 150px)',
-            gap: '63px',
-            paddingLeft: '53px',
-            paddingTop: '78px',
-            paddingBottom: '70px'
-        }}>
+        <div className="flex flex-wrap gap-4 mx-auto xs:w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12 my-12">
             {dates.map((dateInfo, index) => (
-                <div key={index} onClick={() => handleClick(index)} style={{
-                    width: '154px',
-                    height: '113px',
-                    border: `2px solid ${index === selectedIndex ? 'red' : 'white'}`, // Change border color based on selection
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    borderRadius: '8px',
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                    cursor: 'pointer',
-                }}>
-                    <span style={{ color: 'white', fontSize: '20px' }}>{dateInfo.dayName}</span>
-                    <span style={{ color: 'white', fontSize: '30px', fontFamily: 'SF Pro Display, sans-serif' }}>
-                        {dateInfo.day}
-                    </span>
-                    <span style={{ color: 'white', fontSize: '20px' }}>{dateInfo.monthName}</span>
+                <div
+                    key={index}
+                    onClick={() => handleClick(index)}
+                    className={`w-[10.25rem] flex flex-col items-center justify-center 
+                                rounded-lg shadow-md cursor-pointer border-2 
+                                ${index === selectedIndex ? 'border-red-500' : 'border-white'}`}
+                >
+                    <span className="text-white">{dateInfo.dayName.slice(0, 3)}</span>
+                    <span className="text-white text-2xl font-sans">{dateInfo.day}</span>
+                    <span className="text-white">{dateInfo.monthName.slice(0, 3)}</span>
                 </div>
             ))}
         </div>

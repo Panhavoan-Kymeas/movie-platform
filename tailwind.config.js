@@ -28,6 +28,7 @@ module.exports = {
     },
   },
   safelist: [
+    'mx-5',
     'gap-20',
     'lg:gap-20',
     'md:gap-16',
@@ -44,6 +45,11 @@ module.exports = {
     'xl:w-7/12',
     'xs:grid-cols-2',
     'xs:h-1',
+    'w-[10.25rem]',
+    'bottom-[-7px]',
+    'left-[4%]',
+    'w-[5.5rem]',
+    'opacity-[0.5]'
   ],
   plugins: [
     require('flowbite/plugin') // Include Flowbite as a plugin
