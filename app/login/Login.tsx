@@ -44,7 +44,7 @@ export default function Login() {
                         <Link href="/" className="hover:underline" style={{color: "#E79C11"}}>forgot password?</Link>
                     </div>
                     <div className="flex justify-center mt-3 mb-5">
-                        <button className="p-2 bg-red-600 text-white rounded" style={{height: '42px', width: '119px', borderRadius: "45px"}}>LOGIN</button>
+                        <button type="submit" className="p-2 bg-red-600 text-white rounded" style={{height: '42px', width: '119px', borderRadius: "45px"}}>LOGIN</button>
                 </div>
                     <div className="flex items-center justify-center">
                         <hr className="flex-grow border-t border-gray-500 w-20" />
