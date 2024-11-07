@@ -35,7 +35,7 @@ export default function Login() {
             <div className="w-[603px] h-[600px] p-8" style={loginContainer}>
                 <h2 className="text-2xl font-bold mb-6 text-center text-white">Welcome, CINEMAers!</h2>
                 {/* Don't forget to add proper link to register page */}
-                <p>Let's grab some popcorn. shall we? Don't have an account?  <Link href="/" className="text-red-500 hover:underline">register one</Link></p>
+                <p>Let's grab some popcorn. shall we? Don't have an account?  <Link href="/register" className="text-red-500 hover:underline">register one</Link></p>
                 <div className="mt-10">
                     <input type="text" placeholder="Email / Phone Number" className="w-full p-2 mb-4 border rounded mb-5" style={{backgroundColor: '#2F2D2D'}} />
                     <PasswordBox placeholder="Password"/>
