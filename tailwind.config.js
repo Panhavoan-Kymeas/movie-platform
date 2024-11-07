@@ -83,12 +83,25 @@ module.exports = {
     'md:left-[35%]',
     'md:left-[6%]',
     'lg:left-[26%]',
+    'xl:left-[21%]',
+    'xl:left-[4%]',
     'sm:left-[9%]',
     'sm:left-[220px]',
     'xs:left-[5.5%]',
     'xs:w-[4.5rem]',
     'xs:left-[54%]',
-    'scrollbar-hide'
+    'scrollbar-hide',
+    'xs:grid-cols-2',
+    'xs:text-2xl',
+    'xs:text-[10px]',
+    'xs:text-[15px]',
+    'xs:text-[12px]',
+    'xs:pl-10',
+    'xs:w-[1.5rem]',
+    'xs:row-span-2',
+    'xs:mx-4',
+    'bg-[#151414]',
+    'xs:mt-7'
   ],
   plugins: [
     require('flowbite/plugin') // Include Flowbite as a plugin

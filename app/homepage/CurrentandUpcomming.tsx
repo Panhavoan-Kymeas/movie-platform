@@ -21,7 +21,7 @@ export default function CurrentAndUpcoming() {
                 COMING SOON
             </button>
             <span 
-                className={`bg-red-700 w-[5.5rem] xs:w-[4.5rem] h-1 absolute bottom-[-7px] duration-300 ${active ? 'lg:left-[5%] md:left-[6%] sm:left-[9%] xs:left-[5.5%]' : 'lg:left-[26%] md:left-[35%] sm:left-[220px] xs:left-[54%]'}`}
+                className={`bg-red-700 w-[5.5rem] xs:w-[4.5rem] h-1 absolute bottom-[-7px] duration-300 ${active ? 'xl:left-[4%] lg:left-[5%] md:left-[6%] sm:left-[9%] xs:left-[5.5%]' : 'xl:left-[21%] lg:left-[26%] md:left-[35%] sm:left-[220px] xs:left-[54%]'}`}
             ></span>
         </div>
     );
