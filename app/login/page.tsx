@@ -1,4 +1,4 @@
-import Login from "./Login"
+import Login from "./Loginbox"
 
 export default function login(){
     return (
