@@ -1,19 +1,19 @@
 import React from "react";
 import '../globals.css'
-import PasswordBox from "../login/passwordBox";
 
-export default function Registerbox() {
-    const registerContainer = {
+export default function RegisterBox() {
+    const registerContainerStyle = {
         opacity: 0.8,
         backgroundColor: '#1D1B1B',
         borderRadius: "15px",
     };
-    const spanStyle = { 
+    const errorTextStyle = { 
         minHeight: '25px',
         display: 'block',
         padding: '0px',
-        fontSize: '12px'
-    }
+        fontSize: '15px',
+        color: 'red',
+    };
 
     return (
         <div className="flex items-center justify-center min-h-screen" style={{
@@ -22,50 +22,50 @@ export default function Registerbox() {
             backgroundPosition: 'center',
             height: '100vh',
         }}>
-            <div className="w-[589px] h-[660px] p-8" style={registerContainer}>
+            <div className="w-[589px] h-[660px] p-8" style={registerContainerStyle}>
                 <h1 className="text-2xl font-bold mb-3">Let's get you READY!</h1>
-                <p>fill up the information below to get started.</p>
+                <p>Fill in the information below to get started.</p>
 
-                <div className="mb-2">
+                <div className="mb-1">
                     <p>Name</p>
-                    <input type="text" style={{ width:513, backgroundColor: '#2F2D2D' }} className="w-full p-2 border rounded" />
-                    <span style={spanStyle}></span>
+                    <input type="text" className="w-full p-2 border rounded" style={{ width: 513, backgroundColor: '#2F2D2D' }} />
+                    <span style={errorTextStyle}></span>
                 </div>
 
-                <div className="flex justify-between mb-2">
+                <div className="flex justify-between mb-1">
                     <div>
                         <p>Username</p>
                         <input type="text" className="w-full p-2 border rounded" style={{ backgroundColor: '#2F2D2D' }} />
-                        <span style={spanStyle}></span>
+                        <span style={errorTextStyle}></span>
                     </div>
                     <div>
                         <p>Date of birth</p>
-                        <input type="date" style={{ backgroundColor: '#2F2D2D' }} className="w-full p-2 border rounded" />
-                        <span style={spanStyle}></span>
+                        <input type="date" className="w-full p-2 border rounded" style={{ backgroundColor: '#2F2D2D' }} />
+                        <span style={errorTextStyle}></span>
                     </div>
                 </div>
 
-                <div className="mb-2">
+                <div className="mb-1">
                     <p>Email</p>
-                    <input type="text" style={{ width:513, backgroundColor: '#2F2D2D', display: 'block' }} className="w-full p-2 border rounded" />
-                    <span style={spanStyle}></span>
+                    <input type="text" className="w-full p-2 border rounded" style={{ width: 513, backgroundColor: '#2F2D2D' }} />
+                    <span style={errorTextStyle}></span>
                 </div>
 
-                <div className="mb-2">
+                <div className="mb-1">
                     <p>Phone Number</p>
-                    <input type="text" style={{ width:513, backgroundColor: '#2F2D2D', display: 'block' }} className="w-full p-2 border rounded" />
-                    <span style={spanStyle}></span>
+                    <input type="text" className="w-full p-2 border rounded" style={{ width: 513, backgroundColor: '#2F2D2D' }} />
+                    <span style={errorTextStyle}></span>
                 </div>
 
-                <div className="mb-8">
+                <div className="mb-5">
                     <p>Password</p>
-                    <input type="text" style={{ width:513, backgroundColor: '#2F2D2D', display: 'block' }} className="w-full p-2 border rounded" />
-                    <span style={spanStyle}></span>
+                    <input type="password" className="w-full p-2 border rounded" style={{ width: 513, backgroundColor: '#2F2D2D' }} />
+                    <span style={errorTextStyle}></span>
                 </div>
 
                 {/* Button container */}
                 <div className="flex justify-end">
-                    <button style={{
+                    <button className="text-white" style={{
                         backgroundColor: "#E61414",
                         width: "120px",
                         height: "42px",
