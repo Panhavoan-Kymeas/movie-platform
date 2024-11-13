@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const movies = [
   {
@@ -53,7 +54,7 @@ const movies = [
 
 const MovieCard = ({ movie }) => {
   return (
-    <a href="#" className="flex flex-col gap-4 h-full group">
+    <Link href="/movie" className="flex flex-col gap-4 h-full group">
       <div className="relative flex-1 w-full overflow-hidden rounded-xl">
         <img 
           src={movie.image} 
@@ -78,7 +79,7 @@ const MovieCard = ({ movie }) => {
             ))}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
