@@ -60,7 +60,6 @@ const MovieCard = ({ movie }) => {
           src={movie.image} 
           alt={``}
           className="w-full h-full object-cover "
-          loading="lazy"
         />
       </div>
       <div className="flex flex-col gap-2">

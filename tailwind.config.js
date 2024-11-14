@@ -111,7 +111,8 @@ module.exports = {
     'fill-white',
     '!bg-customGray',
     '!border-customGray',
-    'w-[30rem]'
+    'w-[30rem]',
+    'lg:w-[50%]'
   ],
   plugins: [
     require('flowbite/plugin') // Include Flowbite as a plugin
