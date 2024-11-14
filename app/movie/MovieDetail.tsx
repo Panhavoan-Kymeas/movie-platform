@@ -1,4 +1,5 @@
 import React from 'react'
+import Rating from './StarRating'
 
 export default function MovieDetail() {
   return (
@@ -10,8 +11,9 @@ export default function MovieDetail() {
                     src={`https://tickets.legend.com.kh/CDN/media/entity/get/Movies/HO00001618`}
                     className="lg:w-[50%] object-cover rounded"
                 />
-                <div className="flex items-center gap-2 mt-2">
+                <div className="flex-cols items-center gap-2 mt-2">
                     <span className="text-2xl font-normal text-white">Trap</span>
+                    <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
                 </div>
             </div>
         </div>
