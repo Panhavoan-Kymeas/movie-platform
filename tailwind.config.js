@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       colors: {
         customGray: '#2a2829',
+        Gray: '#6f7a76',
+        Red: '#E41111'
       },
       spacing: {
         '20': '5rem',
@@ -112,7 +114,14 @@ module.exports = {
     '!bg-customGray',
     '!border-customGray',
     'w-[30rem]',
-    'lg:w-[50%]'
+    'lg:w-[50%]',
+    'lg:w-[25%]',
+    'lg:grid-cols-[20%_35%_45%]',
+    'lg:gap-2',
+    'lg:w-7',
+    'text-Gray',
+    'space-y-4',
+    'my-1'
   ],
   plugins: [
     require('flowbite/plugin') // Include Flowbite as a plugin
