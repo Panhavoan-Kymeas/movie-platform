@@ -13,7 +13,11 @@ module.exports = {
       colors: {
         customGray: '#2a2829',
         Gray: '#6f7a76',
-        Red: '#E41111'
+        Red: '#E41111',
+        slate: {
+          50: '#f8fafc',
+          900: '#0f172a',
+        },
       },
       spacing: {
         '20': '5rem',
@@ -121,7 +125,8 @@ module.exports = {
     'lg:w-7',
     'text-Gray',
     'space-y-4',
-    'my-1'
+    'my-1',
+    'from-slate-900'
   ],
   plugins: [
     require('flowbite/plugin') // Include Flowbite as a plugin
