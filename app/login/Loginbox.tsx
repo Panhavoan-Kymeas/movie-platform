@@ -87,7 +87,7 @@ const Login: React.FC = () => {
 
           <div className="flex justify-between">
             <div></div>
-            <Link href="/" className="hover:underline" style={{ color: "#E79C11" }}>forgot password?</Link>
+            <Link href="/login/forget" className="hover:underline" style={{ color: "#E79C11" }}>forgot password?</Link>
           </div>
 
           <div className="flex justify-center mt-3 mb-5">
