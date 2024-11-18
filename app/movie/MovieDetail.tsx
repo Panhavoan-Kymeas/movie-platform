@@ -5,8 +5,8 @@ import TrailerPlayer from './TrailerPlayer';
 
 export default function MovieDetail() {
   return (
-    <div>
-        <div className="flex items-center justify-center mx-auto my-12 xs:w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12">
+    <div className="items-center justify-center mx-auto my-12 xs:w-10/12 sm:w-10/12 md:w-9/12 lg:w-8/12 xl:w-7/12">
+        <div className="flex items-center justify-center">
             <div className="grid lg:grid-cols-[20%_35%_45%] gap-0 w-full">
                 <div className="">
                     <div className="h-full object-cover rounded">
