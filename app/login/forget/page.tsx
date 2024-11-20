@@ -45,7 +45,7 @@ export default function Forget() {
             <button
               type="button"
             >
-              BACK TO LOGIN
+            BACK TO LOGIN
             </button>
           </Link>
         </div>
