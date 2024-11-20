@@ -39,15 +39,15 @@ const MovieCard = ({ movie }: { movie: Movie }) => {
 };
 
 const MovieList = () => {
-  const [movies, setMovies] = useState<Movie[]>([]); // Initialize state to store fetched movies
+  const [movies, setMovies] = useState<Movie[]>([]);
 
   useEffect(() => {
-    axios.get('https://api.legend.com.kh/scheduled-films?limit=100&date=2024-11-22T00:00:00.000Z&vistaCinemaId&sort=latest-released')
+    axios.get('http://localhost:3000/api/movie')
       .then(res => {
-        const apiMovies = res.data.rows.map((movie: any, index: number) => ({
-          id: index + 1, // Generate unique id (you can modify this based on actual data)
+        const apiMovies = res.data.map((movie: any, index: number) => ({
+          id: movie.movie_id,
           title: movie.title,
-          image: movie.bannerImageUrl,
+          image: movie.posterimage,
         }));
         setMovies(apiMovies);
       })
