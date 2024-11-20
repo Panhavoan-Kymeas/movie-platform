@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../homepage/Header';
 import SearchBar from '../homepage/Searchbar';
 import Footer from '../homepage/Footer';
 import { MovieDetail } from './MovieDetail';
