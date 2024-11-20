@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
+import SkeletonCard from './SkeletonCard';
 
 // Define Movie interface to match both static and dynamic data structures
 interface Movie {
@@ -47,7 +48,7 @@ const MovieList = () => {
         const apiMovies = res.data.map((movie: any, index: number) => ({
           id: movie.movie_id,
           title: movie.title,
-          image: movie.posterimage,
+          image: movie.posterurl,
         }));
         setMovies(apiMovies);
       })
@@ -64,7 +65,9 @@ const MovieList = () => {
             <MovieCard key={movie.id} movie={movie} />
           ))
         ) : (
-          <p className="text-white text-center">Loading movies...</p>
+          Array(4).fill(null).map((_, index) => (
+            <SkeletonCard key={index} />
+          ))
         )}
       </div>
     </div>

@@ -3,7 +3,7 @@ import CurrentandUpcomming from "./CurrentandUpcomming";
 import Showtime from "./Showtime";
 import MovieList from "./MovieList"
 import Header from "./Header";
-import SearchBar from "./Searchbar.";
+import SearchBar from "./Searchbar";
 
 export default function Home() {
 
